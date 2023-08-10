@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#bgrnd{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 105vh;
+}
+#bgrnd img{
+    position: absolute;
+    width: 100%;
+}
+#gradient{
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    z-index: 10;
+    width: 100%;
+    min-height: 45%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8), black
+    );
+}
+#overlay{
+    position: absolute;
+    padding: 20px 40px;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    background: #0000004d;
+}
+nav{
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /* background-color: aliceblue; */
+}
+nav h3{
+    font-size: 20px;
+}
+nav button{
+    padding: 6px 30px;
+    border: none;
+    font-size: 13px;
+    border-radius: 40px;
+}
+#overlay h1{
+    position: absolute;
+    left: 50%;
+    top: 44.5%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    color: white;
+}
+footer{
+    position: absolute;
+    bottom: 7%;
+    width: 93%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #left h3{
+    font-size: 13px;
+    font-weight: 100;
+}
+footer #left h3 span{
+    font-size: 30px;
+    margin-right: 4px;
+}
+footer #right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%
+}
+footer #right h3{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+#content{
+    min-height: 90vh;
+    width: 100%;
+    background-color: black;
+    padding: 1px;
+}
+#elems{
+    width: 70%;
+    min-height: 190px;
+    /* background-color: rgb(109, 109, 109); */
+    margin: 0 auto;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.block{
+    position: relative;
+    overflow: hidden;
+    width: 49%;
+    height: 70px;
+    border-radius: 5px;
+    /* background-color: red; */
+}
+.image1{
+    height: 100%;
+    width: 100%;
+    background-image: url(air.jpg);
+    background-position: bottom;
+    background-size: cover;
+    opacity: 0.8;
+}
+.image2{
+    height: 100%;
+    width: 100%;
+    background-image: url(water.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.image3{
+    height: 100%;
+    width: 100%;
+    background-image: url(fire.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.image4{
+    height: 100%;
+    width: 100%;
+    background-image: url(soil.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.block h5{
+    /* z-index: 15; */
+    position: absolute;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+p{
+    color: white;
+    width: 50%;
+    font-size: 13px;
+    margin: 30px auto;
+    text-align: center;
+}
+.last h3{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+#sky{
+    z-index: 1;
+}
+#pahad1{
+    z-index: 2;
+}
+#pahadman{
+    z-index: 3;
+}
+
+
+
+@media (max-width:600px) {
+    #main{
+        position: relative;
+    }
+    #bgrnd{
+        min-height: 110vh;
+    }
+    #gradient{
+        bottom: 70%;
+        width: 100%;
+        min-height: 50vh;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.367), rgb(0, 0, 0)
+    );
+    }
+    nav h3{
+        font-size: 15px;
+    }
+    nav button{
+        padding: 4px 20px;
+        font-size: 12px;
+        border-radius: 40px;
+    }
+    #overlay{
+        background: #0000006d;
+        /* background-color: red; */
+        min-height: 31vh;
+    }
+    #overlay h1{
+        top: 33%;
+        font-size: 30px;
+        color: white;
+    }
+    footer{
+        bottom: 10%;
+        width: 80%;
+    }
+    footer #right{
+        display: none;
+    }
+    #content{
+        position: absolute;
+        top: 25vh;
+        height: 90vh;
+        width: 100%;
+        background-color: black;
+        padding: 1px;
+    }
+    #elems{
+        width: 90%;
+        z-index: 15;
+        margin-top: 150px;
+        min-height: 150px;
+    }
+    p{
+        width: 85%;
+        font-size: 15px;
+    }
+}

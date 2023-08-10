@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="bgrnd">
+        <div id="overlay">
+            <nav>
+                <h3>Ready.co</h3>
+                <button>Sing In</button>
+            </nav>
+            <h1>
+                Fly High
+            </h1>
+            <footer>
+                <div id="left"><h3><span>09</span>/10</h3></div>
+                <div id="right">
+                    <h3>Facebook</h3>
+                    <h3>Instagram</h3>
+                    <h3>Twitch</h3>
+
+                </div>
+            </footer>
+        </div>
+        <img id="sky" class="parallax" data-depth="0.1" src="sky.png" alt="">
+        <img id="pahad1" class="parallax" data-depth="0.2" src="pahad1.png" alt="">
+        <img id="pahadman" class="parallax" data-depth="0.37" src="pahadman.png" alt="">
+        <div id="gradient"></div>
+    </div>
+    <div id="content">
+        <div id="elems">
+            <div class="block">
+                <div class="image1"></div>
+                <h5>Air</h5>
+            </div>
+            <div class="block">
+                <div class="image2"></div>
+                <h5>Water</h5>
+            </div>
+            <div class="block">
+                <div class="image3"></div>
+                <h5>Fire</h5>
+            </div>
+            <div class="block">
+                <div class="image4"></div>
+                <h5>Soil</h5>
+            </div>
+        </div>
+        <p>The human body comprises the elemental essence of soil, fire, water, and air, interwoven into a harmonious existence. This ancient concept reflects the interconnectedness of life's fundamental building blocks, binding us to the natural world.</p>
+
+        <div class="last">
+            <h3>Crafted with ❤️ by Shubham Singh</h3>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
